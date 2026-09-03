@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Great+Vibes&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-hand: "Great Vibes", cursive;
+
+  --color-church-blue: #1e3a5f;
+  --color-church-warm: #fdfbf7;
+  --color-church-accent: #c2b377;
+  --color-church-dark: #0f172a;
+}
+
+@layer base {
+  body {
+    @apply bg-church-warm text-church-dark font-sans antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+}
+
+.handwritten {
+  @apply font-hand text-5xl;
+}
+
+.glass-concrete {
+  @apply bg-white/10 backdrop-blur-md border border-white/20;
+}
+
+.btn-primary {
+  @apply px-6 py-2 bg-church-blue text-white rounded-md hover:bg-church-blue/90 transition-all duration-200 font-medium;
+}
+
+.btn-secondary {
+  @apply px-6 py-2 border border-church-blue text-church-blue rounded-md hover:bg-church-blue hover:text-white transition-all duration-200 font-medium;
+}
+
+.btn-outline {
+  @apply px-6 py-2 border border-white text-white rounded-md hover:bg-white hover:text-church-blue transition-all duration-200 font-medium;
+}

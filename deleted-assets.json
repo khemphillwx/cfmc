@@ -1,0 +1,271 @@
+{
+  "deletedAt": "2026-08-28T14:32:29",
+  "note": "Files removed from src/assets because nothing imported them. They were never included in the build.",
+  "keptInUse": 61,
+  "deleted": [
+    {
+      "file": "Ann 2026.jpg",
+      "bytes": 4248938
+    },
+    {
+      "file": "Brooke 2026.jpg",
+      "bytes": 3388825
+    },
+    {
+      "file": "CFMC-AnnHladilek.jpg",
+      "bytes": 11206298
+    },
+    {
+      "file": "CFMC-Come-As-You-Are.jpg",
+      "bytes": 3747944
+    },
+    {
+      "file": "CFMC-EddieHulsey.jpg",
+      "bytes": 9569564
+    },
+    {
+      "file": "CFMC-GLOW.jpeg",
+      "bytes": 10323
+    },
+    {
+      "file": "CFMC-GilbertHuey.jpg",
+      "bytes": 7167305
+    },
+    {
+      "file": "CFMC-Historical-2.jpg",
+      "bytes": 71638
+    },
+    {
+      "file": "CFMC-JacksonRivers.jpg",
+      "bytes": 4700360
+    },
+    {
+      "file": "CFMC-Join-Us.jpg",
+      "bytes": 2857622
+    },
+    {
+      "file": "CFMC-KaitlinDorer.jpg",
+      "bytes": 7634137
+    },
+    {
+      "file": "CFMC-Kids-1.jpg",
+      "bytes": 3440612
+    },
+    {
+      "file": "CFMC-Kids-2.jpg",
+      "bytes": 3426312
+    },
+    {
+      "file": "CFMC-Kids-3.jpg",
+      "bytes": 3555831
+    },
+    {
+      "file": "CFMC-Kids-4.jpg",
+      "bytes": 3084148
+    },
+    {
+      "file": "CFMC-MarkBarnes.jpg",
+      "bytes": 8657017
+    },
+    {
+      "file": "CFMC-MelanieAdams.jpg",
+      "bytes": 9606892
+    },
+    {
+      "file": "CFMC-Missions-1.jpeg",
+      "bytes": 2960057
+    },
+    {
+      "file": "CFMC-Missions-2.jpeg",
+      "bytes": 4483260
+    },
+    {
+      "file": "CFMC-Missions-3.jpeg",
+      "bytes": 4082159
+    },
+    {
+      "file": "CFMC-Missions-4.jpeg",
+      "bytes": 4604519
+    },
+    {
+      "file": "CFMC-Missions-5.jpeg",
+      "bytes": 4135568
+    },
+    {
+      "file": "CFMC-Missions-6.jpeg",
+      "bytes": 4035272
+    },
+    {
+      "file": "CFMC-Missions-and-Outreach-3.jpg",
+      "bytes": 3010494
+    },
+    {
+      "file": "CFMC-Missions-and-Outreach-4.jpg",
+      "bytes": 4026147
+    },
+    {
+      "file": "CFMC-Outside-Front.jpg",
+      "bytes": 3669580
+    },
+    {
+      "file": "CFMC-SandyAlewine.jpg",
+      "bytes": 9611929
+    },
+    {
+      "file": "CFMC-Sketch.jpg",
+      "bytes": 94482
+    },
+    {
+      "file": "CFMC-Solid-Rock.jpg",
+      "bytes": 2673627
+    },
+    {
+      "file": "CFMC-Sunday-School-1.jpg",
+      "bytes": 3887024
+    },
+    {
+      "file": "CFMC-Sunday-School-2.jpg",
+      "bytes": 3534615
+    },
+    {
+      "file": "CFMC-Sunday-School-3.jpg",
+      "bytes": 3567046
+    },
+    {
+      "file": "CFMC-Sunday-School-4.jpg",
+      "bytes": 3570139
+    },
+    {
+      "file": "CFMC-TracyRainwater.jpg",
+      "bytes": 12649859
+    },
+    {
+      "file": "CFMC-TravisGeorge.jpg",
+      "bytes": 7336636
+    },
+    {
+      "file": "CFMC-TravisSneed.jpg",
+      "bytes": 11133586
+    },
+    {
+      "file": "CFMC-Wedding1.jpg",
+      "bytes": 8810728
+    },
+    {
+      "file": "CFMC-Wedding2.jpg",
+      "bytes": 7312882
+    },
+    {
+      "file": "CFMC-Wedding3.jpg",
+      "bytes": 4801863
+    },
+    {
+      "file": "CFMC-Wedding4.jpg",
+      "bytes": 5692037
+    },
+    {
+      "file": "CFMC-Where-Are-We-Now.jpg",
+      "bytes": 3718270
+    },
+    {
+      "file": "CFMC-Who-We-Are.jpg",
+      "bytes": 3875263
+    },
+    {
+      "file": "CFMC-sketch-2.jpg",
+      "bytes": 4892005
+    },
+    {
+      "file": "Carrollton Alternative Logo black.png",
+      "bytes": 171833
+    },
+    {
+      "file": "Carrollton FMC_Aug2026-107.jpg",
+      "bytes": 1701868
+    },
+    {
+      "file": "Carrollton FMC_Aug2026-113.jpg",
+      "bytes": 1515113
+    },
+    {
+      "file": "Carrollton FMC_Aug2026-149.jpg",
+      "bytes": 1579260
+    },
+    {
+      "file": "Carrollton FMC_Aug2026-160.jpg",
+      "bytes": 1964577
+    },
+    {
+      "file": "Carrollton FMC_Aug2026-184.jpg",
+      "bytes": 1826854
+    },
+    {
+      "file": "Carrollton FMC_Aug2026-25.jpg",
+      "bytes": 2015568
+    },
+    {
+      "file": "Carrollton FMC_Aug2026-278.jpg",
+      "bytes": 1531274
+    },
+    {
+      "file": "Carrollton FMC_Aug2026-75.jpg",
+      "bytes": 1810043
+    },
+    {
+      "file": "Carrollton FMC_Aug2026-99.jpg",
+      "bytes": 1664676
+    },
+    {
+      "file": "Gilbert 2026.jpg",
+      "bytes": 4106900
+    },
+    {
+      "file": "Jackson 2026.jpg",
+      "bytes": 3881827
+    },
+    {
+      "file": "Katie 2026.jpg",
+      "bytes": 4446515
+    },
+    {
+      "file": "Mark 2026.jpg",
+      "bytes": 5295967
+    },
+    {
+      "file": "Melanie 2026.jpg",
+      "bytes": 4012823
+    },
+    {
+      "file": "Sandy 2026.jpg",
+      "bytes": 4113998
+    },
+    {
+      "file": "Travis 2026.jpg",
+      "bytes": 3815500
+    },
+    {
+      "file": "Travis G 2026.jpg",
+      "bytes": 3692205
+    },
+    {
+      "file": "logos/GLOW Logo.png",
+      "bytes": 257145
+    },
+    {
+      "file": "logos/images-10.jpeg",
+      "bytes": 30219
+    },
+    {
+      "file": "missions/CFMC-Missions-1.jpg",
+      "bytes": 611798
+    },
+    {
+      "file": "missions/CFMC-Missions-3.jpg",
+      "bytes": 531861
+    },
+    {
+      "file": "missions/CFMC-Missions-5.jpg",
+      "bytes": 582892
+    }
+  ]
+}

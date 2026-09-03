@@ -34,3 +34,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# vite build output
+/dist
+
+# claude code local settings
+.claude/settings.local.json
