@@ -21,7 +21,7 @@ export default function Hero({
   // Vimeo "background" mode is built for exactly this: autoplays, loops, stays
   // muted and hides every control, so the video reads as a backdrop. dnt=1 opts
   // out of Vimeo's tracking cookies.
-  videoUrl = "https://player.vimeo.com/video/1223753389?background=1&autoplay=1&loop=1&muted=1&dnt=1",
+  videoUrl = "https://player.vimeo.com/video/1225063146?background=1&autoplay=1&loop=1&muted=1&dnt=1",
   imageUrl = "https://picsum.photos/id/1018/1920/1080",
   primaryBtnText = "Join Us",
   primaryBtnLink = "/join",
