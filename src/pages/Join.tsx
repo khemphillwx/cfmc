@@ -51,7 +51,7 @@ export default function Join() {
         <div className="max-w-5xl mx-auto">
           <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl bg-church-blue">
             <iframe
-              src="https://www.youtube.com/embed/wq6vH9PLrzY?autoplay=1&mute=0&playsinline=1&rel=0&cc_load_policy=0"
+              src="https://www.youtube.com/embed/stX8oZqT2aM?autoplay=1&mute=0&playsinline=1&rel=0&cc_load_policy=0"
               title="Join Us at Carrollton First Methodist Church"
               className="w-full h-full"
               allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
