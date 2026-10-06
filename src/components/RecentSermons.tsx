@@ -1,13 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { Play, Calendar, Heart, ArrowRight, X, Youtube } from "lucide-react";
-import {
-  CHANNEL_URL,
-  fetchLiveSermons,
-  getSnapshotSermons,
-  hasLiveRefresh,
-  type Sermon,
-} from "../lib/youtube";
+import { CHANNEL_URL, getSnapshotSermons, type Sermon } from "../lib/youtube";
 
 interface RecentSermonsProps {
   /** How many cards to show. The grid is built for multiples of three. */
@@ -21,30 +15,10 @@ const dateFormat = new Intl.DateTimeFormat("en-US", {
 });
 
 export default function RecentSermons({ count = 3 }: RecentSermonsProps) {
-  // Seeded from the build-time snapshot, so real sermons are on screen for the
-  // first paint — no loading state, no layout shift.
-  const [sermons, setSermons] = useState<Sermon[]>(() =>
-    getSnapshotSermons(count),
-  );
+  // From the snapshot in src/data/sermons.json (refreshed daily), so real
+  // sermons are on screen for the first paint — no loading state.
+  const sermons = getSnapshotSermons(count);
   const [playing, setPlaying] = useState<Sermon | null>(null);
-
-  // Only does anything if a YouTube API key is configured; see src/lib/youtube.ts.
-  useEffect(() => {
-    if (!hasLiveRefresh) return;
-    let active = true;
-
-    fetchLiveSermons(count)
-      .then((result) => {
-        if (active) setSermons(result);
-      })
-      .catch((error) => {
-        console.warn("[sermons] live refresh failed, using snapshot:", error);
-      });
-
-    return () => {
-      active = false;
-    };
-  }, [count]);
 
   // While the player is open: close on Escape and don't scroll the page behind it.
   useEffect(() => {
@@ -131,9 +105,11 @@ function SermonCard({
       </button>
 
       <div className="p-8 flex flex-col flex-1">
-        <div className="flex items-center gap-2 text-xs text-church-accent uppercase tracking-widest mb-4 font-medium">
-          <Calendar size={14} /> {dateFormat.format(sermon.date)}
-        </div>
+        {sermon.date && (
+          <div className="flex items-center gap-2 text-xs text-church-accent uppercase tracking-widest mb-4 font-medium">
+            <Calendar size={14} /> {dateFormat.format(sermon.date)}
+          </div>
+        )}
         <h3
           title={sermon.rawTitle}
           className="text-2xl font-serif text-church-blue mb-4 leading-tight line-clamp-2"
@@ -187,12 +163,6 @@ function SermonThumbnail({ sermon }: { sermon: Sermon }) {
         }}
         className="absolute inset-0 w-full h-full object-cover brightness-75 group-hover:brightness-50 transition-all"
       />
-      {sermon.isLive && (
-        <span className="absolute top-4 left-4 z-10 flex items-center gap-1.5 rounded-full bg-red-600 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-white">
-          <span className="h-1.5 w-1.5 rounded-full bg-white animate-pulse" />
-          Live
-        </span>
-      )}
       <div className="relative z-10 w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white group-hover:scale-110 transition-transform">
         <Play fill="currentColor" size={24} />
       </div>
@@ -224,10 +194,13 @@ function SermonPlayer({
             <h3 className="text-xl sm:text-2xl font-serif leading-tight">
               {sermon.title}
             </h3>
-            <p className="text-white/60 text-sm mt-1">
-              {dateFormat.format(sermon.date)}
-              {sermon.speaker && ` · ${sermon.speaker}`}
-            </p>
+            {(sermon.date || sermon.speaker) && (
+              <p className="text-white/60 text-sm mt-1">
+                {[sermon.date && dateFormat.format(sermon.date), sermon.speaker]
+                  .filter(Boolean)
+                  .join(" · ")}
+              </p>
+            )}
           </div>
           <button
             type="button"

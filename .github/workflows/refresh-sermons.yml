@@ -1,0 +1,51 @@
+# Checks the YouTube "Sermons" playlist once a day and, when a new sermon has
+# been added, commits the updated src/data/sermons.json. That push redeploys
+# the site on Vercel, so the home page's Recent Sermons stay current with no
+# manual step. Days with nothing new make no commit and no deploy.
+#
+# Run it by hand from the repo's Actions tab ("Refresh sermons" → Run workflow).
+
+name: Refresh sermons
+
+on:
+  schedule:
+    # 11:00 UTC = 6–7 AM in Carrollton, GA.
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-sermons
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # The script uses only Node built-ins, so no npm install is needed.
+      # --strict makes a failed refresh fail this job, so GitHub emails about it.
+      - name: Fetch the latest sermons
+        run: node scripts/fetch-sermons.mjs --strict
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+
+      - name: Commit if anything changed
+        run: |
+          if git diff --quiet -- src/data/sermons.json; then
+            echo "No new sermons."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898799+github-actions[bot]@users.noreply.github.com"
+          git add src/data/sermons.json
+          git commit -m "Update recent sermons from YouTube"
+          git push
