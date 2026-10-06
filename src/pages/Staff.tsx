@@ -11,8 +11,6 @@ import ann from "../assets/staff/ann-hladilek.jpg";
 import mark from "../assets/staff/mark-barnes.jpg";
 import eddie from "../assets/staff/eddie-hulsey.jpg";
 import tracy from "../assets/staff/tracy-rainwater.jpg";
-import travisg from "../assets/staff/travis-george.jpg";
-import gilbert from "../assets/staff/gilbert-huey.jpg";
 import sandy from "../assets/staff/sandy-alewine.jpg";
 import brooke from "../assets/staff/brooke-burson.jpg";
 import katie from "../assets/staff/kate-huckeba.jpg";
@@ -61,18 +59,6 @@ export default function Staff() {
       role: "Communications Director",
       email: "brooke@carrolltonfirst.com",
       image: brooke,
-    },
-    {
-      name: "Travis George",
-      role: "Facilities Manager",
-      email: "facilities@carrolltonfirst.com",
-      image: travisg,
-    },
-    {
-      name: "Gilbert Huey",
-      role: "Facilities Manager",
-      email: "facilities@carrolltonfirst.com",
-      image: gilbert,
     },
     {
       name: "Sandy Alewine",
