@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
+import { EVENTS_CALENDAR_URL } from "../lib/links";
 
 interface HeroProps {
   title?: string;
@@ -15,6 +16,24 @@ interface HeroProps {
   tertiaryBtnLink?: string;
 }
 
+// Router <Link> only handles in-app routes, so external URLs (e.g. the Realm
+// calendar) get a plain anchor that opens in a new tab.
+function HeroButton({ to, children }: { to: string; children: React.ReactNode }) {
+  const className = "btn-outline px-8 py-3 text-lg";
+  if (/^https?:\/\//.test(to)) {
+    return (
+      <a href={to} target="_blank" rel="noopener noreferrer" className={className}>
+        {children}
+      </a>
+    );
+  }
+  return (
+    <Link to={to} className={className}>
+      {children}
+    </Link>
+  );
+}
+
 export default function Hero({
   title = "A Welcoming Community Following Jesus",
   subtitle,
@@ -26,7 +45,7 @@ export default function Hero({
   primaryBtnText = "Join Us",
   primaryBtnLink = "/join",
   secondaryBtnText = "Events",
-  secondaryBtnLink = "/events",
+  secondaryBtnLink = EVENTS_CALENDAR_URL,
   tertiaryBtnText = "Give",
   tertiaryBtnLink = "/give",
 }: HeroProps) {
@@ -87,15 +106,9 @@ export default function Hero({
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-wrap justify-center gap-4"
         >
-          <Link to={primaryBtnLink} className="btn-outline px-8 py-3 text-lg">
-            {primaryBtnText}
-          </Link>
-          <Link to={secondaryBtnLink} className="btn-outline px-8 py-3 text-lg">
-            {secondaryBtnText}
-          </Link>
-          <Link to={tertiaryBtnLink} className="btn-outline px-8 py-3 text-lg">
-            {tertiaryBtnText}
-          </Link>
+          <HeroButton to={primaryBtnLink}>{primaryBtnText}</HeroButton>
+          <HeroButton to={secondaryBtnLink}>{secondaryBtnText}</HeroButton>
+          <HeroButton to={tertiaryBtnLink}>{tertiaryBtnText}</HeroButton>
         </motion.div>
       </div>
     </section>
