@@ -1,31 +1,31 @@
 {
   "channelId": "UCGlaq1JAKKEkItED4wSj0Yw",
   "playlistId": "PLN4ec_iMN-G0",
-  "generatedAt": "2026-10-06T16:08:13.215Z",
+  "generatedAt": "2026-10-07T17:43:42.612Z",
   "videos": [
     {
       "id": "8sZ_F9BRlz8",
       "title": "\"Get Back Up... On Your Knees” 1 Samuel 30:3-6, Rev. Travis Sneed",
       "description": "",
-      "published": "2026-09-24T08:09:16-07:00",
+      "published": "",
       "thumbnail": "https://i.ytimg.com/vi/8sZ_F9BRlz8/maxresdefault.jpg",
-      "durationSeconds": 1739
+      "durationSeconds": null
     },
     {
       "id": "4hipkf_URKE",
       "title": "\"Get Back Up... With a New Perspective\" Romans 8:18-28, Rev. Travis Sneed",
       "description": "",
-      "published": "2026-09-24T07:44:31-07:00",
+      "published": "",
       "thumbnail": "https://i.ytimg.com/vi/4hipkf_URKE/maxresdefault.jpg",
-      "durationSeconds": 1834
+      "durationSeconds": null
     },
     {
       "id": "2jrdlcd761w",
       "title": "\"Impossible to Possible\" Mark 10:17-27, Jackson Rivers",
       "description": "",
-      "published": "2026-09-24T07:44:19-07:00",
+      "published": "",
       "thumbnail": "https://i.ytimg.com/vi/2jrdlcd761w/maxresdefault.jpg",
-      "durationSeconds": 1591
+      "durationSeconds": null
     }
   ]
 }
