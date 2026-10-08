@@ -1,30 +1,30 @@
 {
   "channelId": "UCGlaq1JAKKEkItED4wSj0Yw",
   "playlistId": "PLN4ec_iMN-G0",
-  "generatedAt": "2026-10-07T17:43:42.612Z",
+  "generatedAt": "2026-10-08T17:47:48.795Z",
   "videos": [
+    {
+      "id": "hFwWqkI-s_s",
+      "title": "\"Good Enough\" Luke 12:13-34, Rev. Travis Sneed",
+      "description": "",
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/hFwWqkI-s_s/maxresdefault.jpg",
+      "durationSeconds": null
+    },
+    {
+      "id": "8IW19byJTr0",
+      "title": "\"Get Back Up... There is Still More\" Jeremiah 29:10-13, Rev. Travis Sneed",
+      "description": "",
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/8IW19byJTr0/maxresdefault.jpg",
+      "durationSeconds": null
+    },
     {
       "id": "8sZ_F9BRlz8",
       "title": "\"Get Back Up... On Your Knees” 1 Samuel 30:3-6, Rev. Travis Sneed",
       "description": "",
       "published": "",
       "thumbnail": "https://i.ytimg.com/vi/8sZ_F9BRlz8/maxresdefault.jpg",
-      "durationSeconds": null
-    },
-    {
-      "id": "4hipkf_URKE",
-      "title": "\"Get Back Up... With a New Perspective\" Romans 8:18-28, Rev. Travis Sneed",
-      "description": "",
-      "published": "",
-      "thumbnail": "https://i.ytimg.com/vi/4hipkf_URKE/maxresdefault.jpg",
-      "durationSeconds": null
-    },
-    {
-      "id": "2jrdlcd761w",
-      "title": "\"Impossible to Possible\" Mark 10:17-27, Jackson Rivers",
-      "description": "",
-      "published": "",
-      "thumbnail": "https://i.ytimg.com/vi/2jrdlcd761w/maxresdefault.jpg",
       "durationSeconds": null
     }
   ]
