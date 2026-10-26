@@ -1,8 +1,16 @@
 {
   "channelId": "UCGlaq1JAKKEkItED4wSj0Yw",
   "playlistId": "PLN4ec_iMN-G0",
-  "generatedAt": "2026-10-20T15:36:04.055Z",
+  "generatedAt": "2026-10-26T17:13:25.409Z",
   "videos": [
+    {
+      "id": "WkW-zGDGFJ0",
+      "title": "\"Death: Is This the End?\" 1 Corinthians 15:20-26, 50-58, Rev. Travis Sneed",
+      "description": "",
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/WkW-zGDGFJ0/maxresdefault.jpg",
+      "durationSeconds": null
+    },
     {
       "id": "PDBWKCCTKUI",
       "title": "\"Doing Good\" Titus 3:3-8,14 (CEB), Rev. Travis Sneed",
@@ -17,14 +25,6 @@
       "description": "",
       "published": "",
       "thumbnail": "https://i.ytimg.com/vi/n1JMeAufGMk/maxresdefault.jpg",
-      "durationSeconds": null
-    },
-    {
-      "id": "hFwWqkI-s_s",
-      "title": "\"Good Enough\" Luke 12:13-34, Rev. Travis Sneed",
-      "description": "",
-      "published": "",
-      "thumbnail": "https://i.ytimg.com/vi/hFwWqkI-s_s/maxresdefault.jpg",
       "durationSeconds": null
     }
   ]
