@@ -10,10 +10,9 @@ import wedding3 from "../assets/weddings/sanctuary.jpg";
 import ceremony1 from "../assets/weddings/ceremony-1.jpg";
 import ceremony2 from "../assets/weddings/ceremony-2.jpg";
 
-// NOTE: these two PDFs must be placed in public/documents/ under exactly these
-// names, or the download buttons will 404.
+// Served from public/documents/. The packet includes the agreement and
+// information forms couples fill out, so there's no separate application.
 const PACKET_URL = "/documents/CFMC-Wedding-Information-Packet.pdf";
-const APPLICATION_URL = "/documents/CFMC-Wedding-Application.pdf";
 
 const ceremonyPhotos = [
   {
@@ -156,11 +155,11 @@ export default function Weddings() {
 
         <div className="max-w-4xl mx-auto">
           <p className="text-xl text-white/70 leading-relaxed">
-            After reviewing the packet, complete the Wedding Application and
-            submit it to the church office. Please remember that submitting an
-            application does not guarantee a wedding date. Your date will be
-            confirmed after the application has been reviewed and the deposit
-            has been paid.
+            After reviewing the packet, complete the forms at the back of it and
+            submit them to the church office. Please remember that submitting
+            the forms does not guarantee a wedding date. Your date will be
+            confirmed after the forms have been reviewed and the deposit has
+            been paid.
           </p>
         </div>
 
@@ -185,13 +184,6 @@ export default function Weddings() {
               className="btn-outline inline-flex items-center gap-2"
             >
               <Download size={18} /> Wedding Information Packet
-            </a>
-            <a
-              href={APPLICATION_URL}
-              download
-              className="btn-outline inline-flex items-center gap-2"
-            >
-              <Download size={18} /> Wedding Application
             </a>
           </div>
 
