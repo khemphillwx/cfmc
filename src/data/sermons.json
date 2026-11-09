@@ -1,8 +1,16 @@
 {
   "channelId": "UCGlaq1JAKKEkItED4wSj0Yw",
   "playlistId": "PLN4ec_iMN-G0",
-  "generatedAt": "2026-11-02T20:42:05.158Z",
+  "generatedAt": "2026-11-09T21:21:44.256Z",
   "videos": [
+    {
+      "id": "E6iKJjvCl2Y",
+      "title": "\"Judgement & Hell: Should We Be Afraid?\" Matthew 25:31-46 (CEB), Rev. Travis Sneed",
+      "description": "",
+      "published": "",
+      "thumbnail": "https://i.ytimg.com/vi/E6iKJjvCl2Y/maxresdefault.jpg",
+      "durationSeconds": null
+    },
     {
       "id": "bzx8TdIepgc",
       "title": "\"Heaven: Where Do We Go?\" John 14:1-6 (CEB), Rev. Travis Sneed",
@@ -17,14 +25,6 @@
       "description": "",
       "published": "",
       "thumbnail": "https://i.ytimg.com/vi/WkW-zGDGFJ0/maxresdefault.jpg",
-      "durationSeconds": null
-    },
-    {
-      "id": "PDBWKCCTKUI",
-      "title": "\"Doing Good\" Titus 3:3-8,14 (CEB), Rev. Travis Sneed",
-      "description": "",
-      "published": "",
-      "thumbnail": "https://i.ytimg.com/vi/PDBWKCCTKUI/maxresdefault.jpg",
       "durationSeconds": null
     }
   ]
